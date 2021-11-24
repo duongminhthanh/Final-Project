@@ -1,0 +1,27 @@
+POST  http://localhost:5002/api/auth/register 
+Content-Type: application/json
+
+{
+    "username":"thanh2",
+    "password":"thanh1234"
+}
+###
+
+POST http://localhost:5002/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "thanh",
+  "password": "thanh"
+}
+###
+POST http://localhost:5002/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDYxYjk1YjdkMjljZTFiMTA5YmQxZTAiLCJpYXQiOjE2MTczNjIxNjV9.ZTwbrIeDpchmUjkNQv_bmBd7_Maw2Gp7Y1ioZx2s7i8
+
+{
+  "title": "React",
+  "description": "React",
+  "url": "react.com",
+  "status": "TO LEARN"
+}
