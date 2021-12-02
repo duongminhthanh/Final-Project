@@ -1,4 +1,4 @@
-POST  https://learn-it123.netlify.app/api/auth/login
+POST  http://localhost:5002/api/auth/register
 Content-Type: application/json
 
 {
