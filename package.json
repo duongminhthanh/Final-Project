@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon index",
-    "build": "react-scripts build"
   },
   "author": "",
   "license": "ISC",
