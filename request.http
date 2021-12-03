@@ -1,23 +1,26 @@
-POST  http://localhost:5002/api/auth/register
+POST http://localhost:5000/api/auth/register
 Content-Type: application/json
 
 {
-    "username":"thanh3",
-    "password":"thanh1234"
+  "username": "jim",
+  "password": "jim"
 }
+
 ###
 
-POST http://localhost:5002/api/auth/login
+POST http://localhost:5000/api/auth/login
 Content-Type: application/json
 
 {
-  "username": "thanh2",
-  "password": "thanh1234"
+  "username": "henry",
+  "password": "henry"
 }
+
 ###
-POST http://localhost:5002/api/posts
+
+POST http://localhost:5000/api/posts
 Content-Type: application/json
-Authorization: Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTlmOTJmYzBiNTQ2OTMxZGU2NmNhMjMiLCJpYXQiOjE2Mzc4ODk3MDF9.xJYhXDOMyoxSLR5rCSbj6h0403Z4KSPsivaGJfs3tfM
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDYxYjk1YjdkMjljZTFiMTA5YmQxZTAiLCJpYXQiOjE2MTczNjIxNjV9.ZTwbrIeDpchmUjkNQv_bmBd7_Maw2Gp7Y1ioZx2s7i8
 
 {
   "title": "React",
@@ -25,16 +28,17 @@ Authorization: Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOi
   "url": "react.com",
   "status": "TO LEARN"
 }
-###
-
-GET http://localhost:5002/api/posts
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTlmOTJmYzBiNTQ2OTMxZGU2NmNhMjMiLCJpYXQiOjE2Mzc4ODk3MDF9.xJYhXDOMyoxSLR5rCSbj6h0403Z4KSPsivaGJfs3tfM
 
 ###
 
-PUT http://localhost:5002/api/posts/6061c25ac2533d41dcae2b19
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDYxYjk1YjdkMjljZTFiMTA5YmQxZTAiLCJpYXQiOjE2MTcwMTk3ODF9.ri-nHdgZc1VQTocFLfMgF4_PhFf2TeUVqXLd8tpOkeA
+
+###
+
+PUT http://localhost:5000/api/posts/6061c25ac2533d41dcae2b19
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTlmOTJmYzBiNTQ2OTMxZGU2NmNhMjMiLCJpYXQiOjE2Mzc4ODk3MDF9.xJYhXDOMyoxSLR5rCSbj6h0403Z4KSPsivaGJfs3tfM
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDYxYjk1YjdkMjljZTFiMTA5YmQxZTAiLCJpYXQiOjE2MTcwMTk3ODF9.ri-nHdgZc1VQTocFLfMgF4_PhFf2TeUVqXLd8tpOkeA
 
 {
   "title": "Vue",
@@ -45,5 +49,5 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTlmO
 
 ###
 
-DELETE http://localhost:5002/api/posts/6061c25ac2533d41dcae2b19
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTlmOTJmYzBiNTQ2OTMxZGU2NmNhMjMiLCJpYXQiOjE2Mzc4ODk3MDF9.xJYhXDOMyoxSLR5rCSbj6h0403Z4KSPsivaGJfs3tfM
+DELETE http://localhost:5000/api/posts/6061c25ac2533d41dcae2b19
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDYxYjk1YjdkMjljZTFiMTA5YmQxZTAiLCJpYXQiOjE2MTcwMTk3ODF9.ri-nHdgZc1VQTocFLfMgF4_PhFf2TeUVqXLd8tpOkeA
